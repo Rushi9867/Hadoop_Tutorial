@@ -1,0 +1,14 @@
+Data Link: https://drive.google.com/drive/folders/1KGFvqPVmi8ChmZ4brGtFr1FbQd0nN7vv
+
+hadoop fs -mkdir /first_map_reduce
+
+haddop fs -put demo.txt /first_map_reduce
+
+hadoop jar hadoop-streaming-2.4.0.jar -files mapper.py,reducer.py -mapper mapper.py -reducer reducer.py -input /first_map_reduce/demo.txt -output /output
+
+hadoop fs -ls /
+
+hadoop fs -ls /output
+
+hadoop fs -cat /output/part-00000
+
