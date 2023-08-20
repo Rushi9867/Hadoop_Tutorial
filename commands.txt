@@ -1,4 +1,5 @@
 Data Link: https://drive.google.com/drive/folders/1KGFvqPVmi8ChmZ4brGtFr1FbQd0nN7vv
+UN-general-Debates: https://www.kaggle.com/datasets/unitednations/un-general-debates
 
 hadoop fs -mkdir /first_map_reduce
 
